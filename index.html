@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>On The Bisons Tracks!</title>
+  <meta charset="utf-8">
+  <meta name="description" content="On The Bisons Tracks!">
+  <meta name="author" content="Alexandra Teste">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>On The Bisons Tracks!</h1>
+    <h2>Following the Dunn Ranch Prairie bisons' daily wanderings</h2>
+    <p>Alexandra Teste<br/>October 2015</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Dunn Ranch Prairie Bisons</h2>
+  </hgroup>
+  <article data-timings="">
+    <blockquote>&ldquo;Let's take a trip to the wild and follow bisons for a while ...&rdquo;</blockquote>
+
+<p><br></p>
+
+<div style='float:left;width:48%;' class='centered'>
+  <p>Over the past few years, bisons have been re-introduced to the <a href="http://www.nature.org/ourinitiatives/regions/northamerica/unitedstates/missouri/dunn-ranch-prairie-flyer.pdf">Dunn Ranch Prairie</a>, in Missouri. Some of them were collared by <a href="http://www.peoplebehindthescience.com/dr-stephen-blake/">Stephen Blake</a>&#39;s team, and data on their movements were collected and graciously made available to the public through the <a href="https://www.movebank.org/panel_embedded_movebank_webapp">Movebank</a>.</p>
+
+<p>The <a href="https://teal13.shinyapps.io/BisonsProject">&quot;On the Bisons Tracks!&quot;</a> application is a tool that allows the user to explore this dataset through a map visualization and the display of travel characteristics directly extracted from the dataset and computed from it.</p>
+
+<p><em>For the sake of speed and ease of understanding, the data available for exploration through this app correspond to those collected in 2013. The animal IDs have been rescaled to integers between and 1 and 12.</em></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="TrackingData.png" alt="app"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Features</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><a href="https://teal13.shinyapps.io/BisonsProject">&quot;On the Bisons Tracks!&quot;</a> allows the user to:</p>
+
+<ul>
+<li>Track animals, on a map, throughout the selected day</li>
+<li>Run cumulative distance travelled calculations and display</li>
+<li>Obtain information on the animals&#39; ground speed over time.</li>
+</ul>
+
+<p>This app is interactive with a date picker and 2 checkboxes. It updates automatically when a new date is selected.</p>
+
+<p><em>Note: The user should wait for a few seconds when first opening the app, to allow for the map to appear. Once it is visible, the user can interact with the app and navigate to the Documentation tab.</em></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <pre><code>## [1] &quot;May 15, 2013&quot;
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+<p><em>Plot produced at the time of &quot;slidification&quot;.</em></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Documentation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Full documentation is additionally available in a separate tab. It provides explanations on:</p>
+
+<ul>
+<li>The source of, and context in which, the data used in the application were collected</li>
+<li>The transformations they underwent</li>
+<li>The calculations that run behind the scenes.</li>
+</ul>
+
+<p><img src="Documentation.png" alt="app"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <style>
+em {
+  font-style: italic
+}
+</style>
+
+<h2>Acknowledgements &amp; Beyond</h2>
+
+<p><br></p>
+
+<p>I would like to thank Stephen Blake and his team for making these data publicly available, and the Movebank for creating such a great source of animal tracking data!</p>
+
+<p><br></p>
+
+<p>This application can be used with any other tracking (i.e. location-based) dataset, and adapted to display the metrics relevant to the scientific project in question.</p>
+
+<p><br></p>
+
+<p>As any project completed in a short amount of time, this application could benefit from improvements. I would more particularly like to add an inter-bison distance computation, to exploit the gender data available in the dataset, and to provide weekly/monthly/yearly statistics on the distances travelled and most favorite gathering grounds.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Dunn Ranch Prairie Bisons'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Features'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Documentation'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
